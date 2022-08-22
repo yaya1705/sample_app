@@ -14,8 +14,10 @@ class ListsController < ApplicationController
     else
      # render :アクション名で、同じコントローラ内の別アクションのViewを表示
       render :new
-    end  
-    
+    end
+    # 上記のrender :newの部分でredirect_toを使うとnewアクション内で再度 @list = List.newが実行され,
+    # @listが上書きされてエラーメッセージが消えてしまいます。
+    # 基本的には、エラーメッセージを扱う際にはrender、それ以外はredirect_toを使うと覚えておきましょう。
   end
 
   def index

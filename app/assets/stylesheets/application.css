@@ -13,3 +13,84 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, h1, nav,.list-comment {
+  /*Google Fonts使用(application.htmlに記述)*/
+  font-family: 'Kaushan', cursive, sans-serif;
+}
+
+header {
+  width: 90%;
+  padding: 15px 0;
+  margin: 30px auto 0;
+  text-align: center;
+  border-top: solid 5px #000000;
+}
+
+header .headine {
+  font-size: 32px;
+}
+
+nav {
+  width: 880px;
+  margin: 0 auto;
+  border-top: solid 0.7px #000000;
+  border-bottom: solid 0.7px #000000;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+main {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+ .list-box {
+   width: 200px;
+   height: 250px;
+   margin: 10px;
+   /*ここでpositionプロパティを指定したことで、画像を投稿しない場合でもコメントの位置が画像がある投稿と揃うようになります。*/
+   position: relative;
+ }
+
+.list-comment {
+  width: 200px;
+  /*positionプロパティは親要素に「relative」、子要素に「absolute」を指定することで、子要素の位置を親要素の範囲内で指定できる*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.list-body {
+  display: block;
+  color: gray;
+  font-size: 12px;
+  /*はみ出した部分を隠す*/
+  overflow: hidden;
+  /*テキストを折り返し表示させないようにする*/
+  white-space: nowrap;
+  /* オーバーしたテキストを３点リーダーにする */
+  text-overflow: ellipsis;
+}
+
+/*参考　https://web-camp.io/magazine/archives/90660*/
