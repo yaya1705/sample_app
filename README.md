@@ -1,24 +1,22 @@
-# README
+# アプリケーションを完成させよう 1~11章
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+- 1章【モデルとコントローラを準備しよう】	80%
+- 2章【投稿機能を作ろう】	80%
+- 3章【一覧画面を表示しよう】	80%
+- 4章【詳細画面を作ろう】	80%
+- 5章【編集機能を作ろう】	80%
+- 6章【画像投稿機能を作ろう】	80%
+- 7章【削除機能を作ろう】	80%
+- 8章【バリデーションの設定】	80%
+- 9章【redirect_toとrenderの処理の違いについて】	80%
+- 10章【rails cを使ってみよう】	80%
+- 11章【レイアウトを整えよう】
 
-Things you may want to cover:
+## 開発環境
+- 言語：HTML,CSS,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- IDE：Cloud9
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用したGem
+- gem 'pry-rails'
